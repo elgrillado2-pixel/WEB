@@ -1,0 +1,22 @@
+body {
+    font-family: verdana, sans-serif;
+}
+
+h2 {
+    color: #f30707;
+}
+
+img {
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+}
+
+.subrayado {
+    background-color: #e5f324;
+}

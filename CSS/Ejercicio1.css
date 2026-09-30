@@ -12,11 +12,25 @@ img {
     border-radius: 10px;
 }
 
-a {
-    display: flex;
-    justify-content: center;
+p {
+    color: #030303;
+    font-size: 30px;
 }
-
 .subrayado {
     background-color: #e5f324;
+}
+
+.a {
+    color: #f30707;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+}
+
+.rectangulo {
+    background-color: #696966;
+    border: 2px solid #030303;
+    width: auto;
+    line-height: 20px;
+    height: 20px;
 }

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flor-area {
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    height: 660px;
+    background: #000;
+    overflow: visible;
+}
+
+.flor {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    height: 600px;
+    object-fit: contain;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 14px #ff00ff);
+}
+
+.etiqueta {
+    position: absolute;
+    z-index: 2;
+    background: #f6d84a;
+    border: 2px solid #000;
+    border-radius: 3px;
+    padding: 6px 12px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+    font-size: 0.85rem;
+    line-height: 1.2;
+    color: #000;
+}
+
+.etiqueta a {
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.etiqueta-top {
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff9ae7;
+}
+
+.etiqueta-top h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.etiqueta-capitulo {
+    top: 130px;
+    left: 25px;
+}
+
+.texto-capitulo {
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.1;
+    color: #000;
+    font-weight: 600;
+}
+
+.etiqueta-google {
+    top: 360px;
+    left: 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.etiqueta-google p,
+.etiqueta-google a {
+    margin: 0;
+}
+
+.etiqueta-google p:first-child {
+    font-size: 0.75rem;
+    line-height: 1.1;
+}
+
+.etiqueta-google a {
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.etiqueta-derecha {
+    display: none;
+}
+
+.pie {
+    width: 100%;
+    background: #4a8ec9;
+    border-top: 3px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 12px 18px;
+    color: #fff;
+}
+
+.hipervinculo {
+    font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.capitulo {
+    color: #fff;
+    text-decoration: none;
+}
+
+.capitulo {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    flex: 1;
+}
+
+

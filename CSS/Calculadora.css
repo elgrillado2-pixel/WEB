@@ -1,0 +1,83 @@
+<style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #1f2937, #111827, #0f172a);
+            color: #f8fafc;
+        }
+
+        .calculadora {
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+            width: min(90vw, 340px);
+        }
+
+        #display {
+            width: 100%;
+            background: #0f172a;
+            color: #e2e8f0;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 18px 14px;
+            margin-bottom: 16px;
+            font-size: 2rem;
+            text-align: right;
+            outline: none;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            padding: 16px 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+            color: #0f172a;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+            box-shadow: 0 6px 12px rgba(15, 23, 42, 0.25);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.04);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        td:nth-child(4) button,
+        td:last-child button {
+            background: linear-gradient(135deg, #f59e0b, #f97316);
+            color: white;
+        }
+
+        [colspan="4"] button {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+        }
+
+        #display, button {
+            user-select: none;
+        }

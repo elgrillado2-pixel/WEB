@@ -1,0 +1,36 @@
+body {
+    font-family: verdana, sans-serif;
+}
+
+h2 {
+    color: #f30707;
+}
+
+img {
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+}
+
+p {
+    color: #030303;
+    font-size: 30px;
+}
+.subrayado {
+    background-color: #e5f324;
+}
+
+.a {
+    color: #f30707;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+}
+
+.rectangulo {
+    background-color: #696966;
+    border: 2px solid #030303;
+    width: auto;
+    line-height: 20px;
+    height: 20px;
+}

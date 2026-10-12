@@ -1,0 +1,64 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 34px 7.5%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+table {
+    text-align: center;
+}
+
+caption {
+    caption-side: top;
+    font-style: italic;
+    padding-bottom: 0;
+}
+
+.tabla1 {
+    border: 2px solid blue;
+    border-spacing: 5px;
+    table-layout: fixed;
+    width: 75%;
+    height: 178px;
+    margin: 0 0 18px;
+}
+
+.tabla1 th {
+    padding: 5px 2px;
+}
+
+.tabla1 td {
+    border: 2px solid blue;
+    padding: 10px 4px;
+}
+
+.tabla2 {
+    border: 1px solid #e5bb00;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 90%;
+    height: 302px;
+}
+
+.tabla2 th,
+.tabla2 td {
+    border: 1px solid #e5bb00;
+    padding: 8px 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.G {
+    background-color: #ddd;
+}
+
+.V {
+    background-color: #95d12f;
+}
+
+#cabecera {
+    
+    width: 100%;
+    height: 60px;
+}

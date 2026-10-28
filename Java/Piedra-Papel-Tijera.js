@@ -29,10 +29,11 @@ function juego(jugador) {
     }
 
 
-}
 
 document.getElementById("marcador").textContent =
 "Partidas: jugadas: " + partidas;
 document.getElementById("ganadas").textContent = "Ganadas: " + ganadas;
 document.getElementById("empatadas").textContent = "Empatadas: " + empatadas;
-document.getElementById("perdidas").textContent = 'Derrotas: ${perdidas}';
+document.getElementById("perdidas").textContent =`Derrotas: ${perdidas}`;
+
+}

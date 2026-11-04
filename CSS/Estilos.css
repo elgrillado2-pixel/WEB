@@ -1,6 +1,9 @@
 header {
-    background-color: #f0f0f0;
-    padding: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 4px solid #e0a526;
     text-align: center;
     font-family: Arial, sans-serif;
     color: #333;
@@ -85,14 +88,20 @@ tbody td:hover {
 }
 
 body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f1f1;
-      padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background: #f1f3f5;
 }
 
 h1 {
-      text-align: center;
-      color: #003366;
+    text-align: center;
+    color: #003366;
+}
+
+header > h1 {
+    margin: 4px 0 18px;
 }
 
 footer {
@@ -120,20 +129,36 @@ li {
 }
 
 nav {
-            background-color: #1e293b;
-            padding: 10px;
-        }
+    background: #1e293b;
+    padding: 10px;
+}
 
-        nav a {
-            background-color: #2d3a4f;
-            color: white;
-            text-decoration: none;
-            padding: 10px 18px;
-            border-radius: 25px;
-            margin-right: 10px;
-            font-weight: bold;
-        }
- h2 {
+nav a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    background: transparent;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: #ffd166;
+}
+
+main {
+    max-width: 960px;
+    margin: 36px auto;
+    padding: 32px;
+    background: #fff;
+    border-left: 6px solid #315d7d;
+}
+
+h2 {
     color: #003366;
     text-align: center;
     margin-top: 20px;    
@@ -141,99 +166,69 @@ nav {
 
 body.pagina-inicio {
     min-height: 100vh;
-    margin: 0;
-    padding: 24px;
-    box-sizing: border-box;
-    background: linear-gradient(145deg, #eef5fb, #f8f6f1);
-}
-
-.pagina-inicio header {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(22, 54, 82, 0.1);
-}
-
-.pagina-inicio header > h1 {
-    margin: 4px 0 18px;
-}
-
-.pagina-inicio nav {
-    border-radius: 12px;
-}
-
-.pagina-inicio nav a {
-    display: inline-block;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.pagina-inicio nav a:hover,
-.pagina-inicio nav a:focus-visible {
-    background-color: #42658c;
-    transform: translateY(-2px);
 }
 
 .pagina-inicio main {
     max-width: 840px;
     margin: 36px auto;
-    padding: 48px 32px;
+    padding: 40px 32px;
     text-align: center;
     background: #fff;
-    border: 1px solid #dce7f0;
-    border-radius: 20px;
-    box-shadow: 0 14px 36px rgba(22, 54, 82, 0.12);
+    border-left: 6px solid #315d7d;
 }
 
 .pagina-inicio main h1 {
     margin: 0;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: 2.5rem;
 }
 
 .pagina-inicio main h2 {
     margin: 14px 0;
     color: #526b84;
     font-size: 1.25rem;
-    font-weight: 500;
 }
 
 .pagina-inicio .texto-bienvenida {
     max-width: 580px;
     margin: 20px auto;
     color: #465568;
-    font-size: 1.05rem;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 .pagina-inicio .etiqueta-curso {
     display: inline-block;
     margin: 8px 0 0;
-    padding: 8px 16px;
+    padding: 8px 12px;
     color: #17466e;
-    background: #e8f2fa;
-    border-radius: 999px;
-    font-size: 0.9rem;
+    background: #fff4d6;
+    border-left: 3px solid #e0a526;
     font-weight: bold;
 }
 
 @media (max-width: 600px) {
-    body.pagina-inicio {
+    body {
         padding: 14px;
     }
 
-    .pagina-inicio header,
-    .pagina-inicio main {
-        padding: 24px 18px;
+    header {
+        padding: 18px;
     }
 
-    .pagina-inicio nav li {
+    nav li {
         display: inline-block;
         margin: 6px 2px;
     }
 
-    .pagina-inicio nav a {
+    nav a {
         margin-right: 4px;
         padding: 9px 12px;
+    }
+
+    main {
+        padding: 24px 18px;
+    }
+
+    .pagina-inicio main h1 {
+        font-size: 2rem;
     }
 }

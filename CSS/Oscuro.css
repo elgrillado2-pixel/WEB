@@ -1,0 +1,12 @@
+header, footer, main {
+    color: #fff;
+    background-color: #333;
+}
+
+h1, h2, p {
+    color: #fff;
+}
+
+body {
+    background-color: #222;
+}
